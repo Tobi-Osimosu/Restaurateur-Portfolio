@@ -1,0 +1,158 @@
+#about {
+  position: relative;
+  padding-top: 278px;
+  padding-bottom: 43.5px;
+
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #31aa52;
+    padding: 8% 5%;
+    color: #ffffff;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .employees,
+  .clients,
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-text1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .banner-text2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
+
+  .divider {
+    width: 2px;
+    background-color: #ffffff;
+  }
+
+  .about-img {
+    transform: scale(0.9);
+  }
+
+  .about-img-container1,
+  .about-img-container2 {
+    &::after {
+      content: "";
+      position: absolute;
+      background: #31aa52;
+      width: 3px;
+      height: 40%;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: #31aa52;
+      width: 40%;
+      height: 3px;
+    }
+  }
+
+  .about-img-container1 {
+    &::after {
+      top: 0;
+      right: 15px;
+    }
+
+    &::before {
+      top: 0;
+      right: 15px;
+    }
+  }
+
+  .about-img-container2 {
+    &::after {
+      bottom: 0;
+      left: 15px;
+    }
+
+    &::before {
+      bottom: 0;
+      left: 15px;
+    }
+  }
+
+  .about-title {
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 72px;
+    color: #343434;
+    margin-top: 30px;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 5px;
+      width: 30%;
+      background: #31aa52;
+      margin-left: -15%;
+    }
+  }
+
+  .about-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 35px;
+    color: #343434;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #about {
+    .banner {
+      padding: 38px 123px;
+      width: 80%;
+      top: -50px;
+    }
+
+    .banner-text1 {
+      font-size: 32px;
+    }
+
+    .banner-text2 {
+      font-size: 20px;
+    }
+
+    .about-title {
+      font-size: 32px;
+      line-height: 72px;
+      text-align: left;
+
+      &::after {
+        content: "";
+        left: 0;
+        width: 30%;
+        margin-left: unset;
+      }
+    }
+
+    .about-text {
+      font-size: 24px;
+      line-height: 45px;
+    }
+  }
+}
