@@ -14,7 +14,7 @@
 
 <body>
 
-  <div #loader class="loader">
+  <!-- <div #loader class="loader">
     <h1 class="loader-text">Cooking in progress..</h1>
     <div id="cooking">
       <div class="bubble"></div>
@@ -32,14 +32,20 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <div class="lds-ellipsis">
+    <div></div>
+    <div class="mr-3"></div>
+    <div></div>
+    <div></div>
   </div>
 
   <app-root></app-root>
 
   <script>
     window.addEventListener('load', () => {
-      document.querySelector(".loader").style.display = "none";
-      document.body.style.overflow = 'unset';
+      document.querySelector(".lds-ellipsis").style.display = "none";
     });
   </script>
 </body>
