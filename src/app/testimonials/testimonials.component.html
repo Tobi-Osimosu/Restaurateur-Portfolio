@@ -1,4 +1,4 @@
-<section id="testimonials">
+<section id="testimonials" (window:resize)="manageSlide()">
     <div class="container">
         <h5 class="testimonials-title">Testimonials</h5>
         <h4 class="testimonials-sub-title">Here is what my amazing clients
@@ -7,9 +7,36 @@
         <div class="testimonials">
             <div class="swiper-container" [swiper]="config">
                 <div class="swiper-wrapper">
-                    <div style="color: blueviolet;" class="swiper-slide">Slide 1</div>
-                    <div style="color: blueviolet;" class="swiper-slide">Slide 2</div>
-                    <div style="color: blueviolet;" class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide testimonial">
+                        <img src="/assets/testimonials/client-image.png" alt="Client Image"
+                            class="testimonial-img img-fluid" loading="lazy">
+                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse. </p>
+                        <p class="testimonial-client">Mark Essien</p>
+                        <p class="testimonial-company">CEO Hotels.ng</p>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <img src="/assets/testimonials/client-image.png" alt="Client Image"
+                            class="testimonial-img img-fluid" loading="lazy">
+                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse. </p>
+                        <p class="testimonial-client">Mark Essien</p>
+                        <p class="testimonial-company">CEO Hotels.ng</p>
+                    </div>
+                    <div class="swiper-slide testimonial">
+                        <img src="/assets/testimonials/client-image.png" alt="Client Image"
+                            class="testimonial-img img-fluid" loading="lazy">
+                        <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                            irure dolor in reprehenderit in voluptate velit esse. </p>
+                        <p class="testimonial-client">Mark Essien</p>
+                        <p class="testimonial-company">CEO Hotels.ng</p>
+                    </div>
                 </div>
 
                 <!-- <div class="swiper-scrollbar"></div>

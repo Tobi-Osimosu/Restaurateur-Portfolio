@@ -1,0 +1,67 @@
+#get-in-touch {
+  padding-top: 43.5px;
+  padding-bottom: 127px;
+
+  .get-in-touch-title {
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 55px;
+    color: #343434;
+    text-align: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -5%;
+      bottom: 0;
+      background: #31aa52;
+      height: 5px;
+      width: 10%;
+    }
+  }
+
+  form {
+    margin-top: 42px;
+  }
+
+  .form-control {
+    border: 1px solid #343434 !important;
+    transition: border 0.1s ease-in-out;
+    border-radius: 0 !important;
+
+    &:focus,
+    &:active {
+      box-shadow: none !important;
+      border: 2px solid #31aa52 !important;
+    }
+  }
+
+  .btn {
+    background-color: #31aa52 !important;
+    border-radius: 0 !important;
+    color: #ffffff !important;
+    font-weight: normal !important;
+    font-size: 18px !important;
+    line-height: 45px !important;
+    padding: 0 40px !important;
+    transition: box-shadow 0.3s, background-color 0.3s ease-in-out !important;
+
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: #206b34 !important;
+      box-shadow: 5px 5px #31aa52 !important;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #get-in-touch {
+    .get-in-touch-sub-title {
+      width: 55%;
+    }
+  }
+}

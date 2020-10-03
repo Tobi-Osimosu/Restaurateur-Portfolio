@@ -1,0 +1,25 @@
+footer {
+  background: #353947;
+  padding: 25px 0;
+  color: #ffffff !important;
+
+  .footer-text {
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .divider {
+    height: 2px;
+    width: 100%;
+    background: #ffffff;
+    margin: 15px 0;
+  }
+
+  img {
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+  }
+}

@@ -10,8 +10,8 @@ export class TestimonialsComponent implements OnInit {
   config: SwiperConfigInterface = {
     direction: 'horizontal',
     loop: true,
-    // slidesPerView: 1,
-    // spaceBetween: 19,
+    // slidesPerView: 2,
+    spaceBetween: 20,
     keyboard: true,
     navigation: true,
     autoplay: {
@@ -23,5 +23,17 @@ export class TestimonialsComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.manageSlide();
+  }
+
+  manageSlide() {
+    if (matchMedia('(max-width: 767.98px)').matches) {
+      this.config.slidesPerView = 1;
+    } else if (matchMedia('(max-width: 991.98px)').matches) {
+      this.config.slidesPerView = 1;
+    } else if (matchMedia('(min-width: 992px)').matches) {
+      this.config.slidesPerView = 2;
+    }
+  }
 }
