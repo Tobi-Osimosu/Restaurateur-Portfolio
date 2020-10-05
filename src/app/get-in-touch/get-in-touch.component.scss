@@ -48,6 +48,8 @@
     line-height: 45px !important;
     padding: 0 40px !important;
     transition: box-shadow 0.3s, background-color 0.3s ease-in-out !important;
+    display: block;
+    width: 100%;
 
     &:active,
     &:focus,
@@ -62,6 +64,11 @@
   #get-in-touch {
     .get-in-touch-sub-title {
       width: 55%;
+    }
+
+    .btn {
+      display: unset;
+      width: unset;
     }
   }
 }

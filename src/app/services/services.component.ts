@@ -5,6 +5,8 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 @Component({
   selector: 'app-services',
@@ -12,11 +14,43 @@ import {
   styleUrls: ['./services.component.scss'],
 })
 export class ServicesComponent implements OnInit, AfterViewInit {
-  @ViewChild('box', { static: false }) box: ElementRef;
+  @ViewChild('services', { static: false }) services: ElementRef;
+  @ViewChild('servicesTitle', { static: false }) servicesTitle: ElementRef;
+  @ViewChild('servicesSubTitle', { static: false })
+  servicesSubTitle: ElementRef;
+  @ViewChild('box1', { static: false }) box1: ElementRef;
+  @ViewChild('box2', { static: false }) box2: ElementRef;
+  @ViewChild('box3', { static: false }) box3: ElementRef;
+  @ViewChild('box4', { static: false }) box4: ElementRef;
+  @ViewChild('box5', { static: false }) box5: ElementRef;
+  @ViewChild('box6', { static: false }) box6: ElementRef;
 
   constructor(private elementRef: ElementRef) {}
 
   ngAfterViewInit() {
+    gsap.registerPlugin(ScrollTrigger);
+    let tl = gsap.timeline({
+      defaults: { duration: 1 },
+      scrollTrigger: {
+        trigger: this.services.nativeElement,
+        toggleActions: 'restart none restart none',
+        start: 'top bottom',
+      },
+    });
+
+    tl.from(this.servicesTitle.nativeElement, { y: -50, opacity: 0 })
+      .from(
+        this.servicesSubTitle.nativeElement,
+        { y: -50, opacity: 0 },
+        '-=0.2'
+      )
+      .from(this.box1.nativeElement, { scale: 0, duration: 0.3 })
+      .from(this.box2.nativeElement, { scale: 0, duration: 0.3 })
+      .from(this.box3.nativeElement, { scale: 0, duration: 0.3 })
+      .from(this.box4.nativeElement, { scale: 0, duration: 0.3 })
+      .from(this.box5.nativeElement, { scale: 0, duration: 0.3 })
+      .from(this.box6.nativeElement, { scale: 0, duration: 0.3 });
+
     // window.addEventListener('mouseover', (p) => {
     //   let rotateX = (window.innerWidth / 2 - p.pageX) / 20;
     //   let rotateY = (window.innerHeight / 2 - p.pageY) / 10;

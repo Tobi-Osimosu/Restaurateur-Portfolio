@@ -14,26 +14,6 @@
 
 <body>
 
-  <!-- <div #loader class="loader">
-    <h1 class="loader-text">Cooking in progress..</h1>
-    <div id="cooking">
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div id="area">
-        <div id="sides">
-          <div id="pan"></div>
-          <div id="handle"></div>
-        </div>
-        <div id="pancake">
-          <div id="pastry"></div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <div class="lds-ellipsis">
     <div></div>
     <div class="mr-3"></div>
@@ -46,6 +26,7 @@
   <script>
     window.addEventListener('load', () => {
       document.querySelector(".lds-ellipsis").style.display = "none";
+      document.body.style.overflow = "unset";
     });
   </script>
 </body>
