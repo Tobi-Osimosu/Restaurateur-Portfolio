@@ -18,12 +18,12 @@ export class ServicesComponent implements OnInit, AfterViewInit {
   @ViewChild('servicesTitle', { static: false }) servicesTitle: ElementRef;
   @ViewChild('servicesSubTitle', { static: false })
   servicesSubTitle: ElementRef;
-  @ViewChild('box1', { static: false }) box1: ElementRef;
-  @ViewChild('box2', { static: false }) box2: ElementRef;
-  @ViewChild('box3', { static: false }) box3: ElementRef;
-  @ViewChild('box4', { static: false }) box4: ElementRef;
-  @ViewChild('box5', { static: false }) box5: ElementRef;
-  @ViewChild('box6', { static: false }) box6: ElementRef;
+  // @ViewChild('box1', { static: false }) box1: ElementRef;
+  // @ViewChild('box2', { static: false }) box2: ElementRef;
+  // @ViewChild('box3', { static: false }) box3: ElementRef;
+  // @ViewChild('box4', { static: false }) box4: ElementRef;
+  // @ViewChild('box5', { static: false }) box5: ElementRef;
+  // @ViewChild('box6', { static: false }) box6: ElementRef;
 
   constructor(private elementRef: ElementRef) {}
 
@@ -33,7 +33,7 @@ export class ServicesComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.services.nativeElement,
-        toggleActions: 'restart none restart none',
+        toggleActions: 'restart none none none',
         start: 'top bottom',
       },
     });

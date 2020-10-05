@@ -47,7 +47,7 @@ export class TestimonialsComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.testimonials.nativeElement,
-        toggleActions: 'restart none restart none',
+        toggleActions: 'restart none none none',
         start: 'top bottom',
       },
     });
