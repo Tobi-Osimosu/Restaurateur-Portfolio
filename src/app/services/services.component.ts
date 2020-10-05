@@ -38,18 +38,17 @@ export class ServicesComponent implements OnInit, AfterViewInit {
       },
     });
 
-    tl.from(this.servicesTitle.nativeElement, { y: -50, opacity: 0 })
-      .from(
-        this.servicesSubTitle.nativeElement,
-        { y: -50, opacity: 0 },
-        '-=0.2'
-      )
-      .from(this.box1.nativeElement, { scale: 0, duration: 0.3 })
-      .from(this.box2.nativeElement, { scale: 0, duration: 0.3 })
-      .from(this.box3.nativeElement, { scale: 0, duration: 0.3 })
-      .from(this.box4.nativeElement, { scale: 0, duration: 0.3 })
-      .from(this.box5.nativeElement, { scale: 0, duration: 0.3 })
-      .from(this.box6.nativeElement, { scale: 0, duration: 0.3 });
+    tl.from(this.servicesTitle.nativeElement, { y: -50, opacity: 0 }).from(
+      this.servicesSubTitle.nativeElement,
+      { y: -50, opacity: 0 },
+      '-=0.2'
+    );
+    // .from(this.box1.nativeElement, { scale: 0, duration: 0.3 })
+    // .from(this.box2.nativeElement, { scale: 0, duration: 0.3 })
+    // .from(this.box3.nativeElement, { scale: 0, duration: 0.3 })
+    // .from(this.box4.nativeElement, { scale: 0, duration: 0.3 })
+    // .from(this.box5.nativeElement, { scale: 0, duration: 0.3 })
+    // .from(this.box6.nativeElement, { scale: 0, duration: 0.3 });
 
     // window.addEventListener('mouseover', (p) => {
     //   let rotateX = (window.innerWidth / 2 - p.pageX) / 20;
