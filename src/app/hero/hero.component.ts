@@ -28,19 +28,19 @@ export class HeroComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     gsap.from(this.text1.nativeElement, {
       y: -50,
-      // opacity: 0,
+      opacity: 0,
       duration: 1,
       delay: 0.6,
     });
     gsap.from(this.text2.nativeElement, {
       y: -50,
-      // opacity: 0,
+      opacity: 0,
       duration: 1,
       delay: 0.8,
     });
     gsap.from(this.btn.nativeElement, {
       y: -50,
-      // opacity: 0,
+      opacity: 0,
       duration: 1,
       delay: 1,
     });
