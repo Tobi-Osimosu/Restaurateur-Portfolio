@@ -29,7 +29,7 @@ export class PortfolioComponent implements OnInit, AfterViewInit {
       defaults: { duration: 1 },
       scrollTrigger: {
         trigger: this.portfolio.nativeElement,
-        toggleActions: 'restart none none none',
+        toggleActions: 'restart none none reset',
         start: 'top bottom',
       },
     });
